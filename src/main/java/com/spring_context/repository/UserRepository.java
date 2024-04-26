@@ -3,6 +3,9 @@ package com.spring_context.repository;
 import com.spring_context.model.User;
 import lombok.extern.slf4j.Slf4j;
 import org.postgresql.ds.PGSimpleDataSource;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 
 import javax.sql.DataSource;
@@ -12,11 +15,13 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 @Slf4j
+@Component
 public class UserRepository {
+
 
     private final DataSource dataSource;
 
-    public UserRepository(DataSource dataSource) {
+    public UserRepository(@Autowired DataSource dataSource) {
         this.dataSource = dataSource;
     }
 

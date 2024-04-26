@@ -1,3 +1,4 @@
+/*
 
 package com.spring_context.config;
 
@@ -24,3 +25,4 @@ public enum DatabaseConfig {
     }
 }
 
+*/

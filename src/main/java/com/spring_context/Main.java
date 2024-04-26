@@ -1,7 +1,6 @@
 package com.spring_context;
 
 
-import com.spring_context.config.DatabaseConfig;
 import com.spring_context.model.User;
 import com.spring_context.repository.UserRepository;
 import org.springframework.context.ApplicationContext;
